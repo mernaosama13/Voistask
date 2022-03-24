@@ -19,11 +19,11 @@ Steps must be done on EC2
 The python script
  
 this script takeing logs from the log group and send it to S3 bucket
--aws configure
 
 1- install python or ensure that the EC2 has python installed ---> sudo yum install -y python3
 2-pip3 install boto3 ----> this enable u to use boto3 in your script
-  - pip3 show boto3
+  - pip3 show boto3 
+3- aws configure ----> confirm the credentials to retrieve the logs
 3-to run the script daily or make schedualed script
  -use crontab job
  sudo crontab -e ----> to create a new cronjob running my script daily
